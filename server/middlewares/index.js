@@ -15,18 +15,18 @@ const mdKoaBody = koaBody({
   strict: true
 });
 
-// 路由处理
-const mdRoute = router.routes();
-const mdRouterAllowed = router.allowedMethods();
-
 // 返回处理
 const mdResHandler = response();
 const mdErrorHandler = error();
 
+// 路由处理
+const mdRoute = router.routes();
+const mdRouterAllowed = router.allowedMethods();
+
 module.exports = [
   mdKoaBody,
-  mdRoute,
-  mdRouterAllowed,
   mdResHandler,
-  mdErrorHandler
+  mdErrorHandler,
+  mdRoute,
+  mdRouterAllowed
 ];
