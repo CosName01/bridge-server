@@ -2,6 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@gitbeaker/node': ^30.2.0
+  '@hapi/joi': ^17.1.1
   '@koa/cors': ^3.1.0
   eslint: ^7.29.0
   eslint-config-airbnb-base: ^14.2.1
@@ -16,6 +17,7 @@ specifiers:
 
 dependencies:
   '@gitbeaker/node': 30.3.0
+  '@hapi/joi': 17.1.1
   '@koa/cors': 3.1.0
   koa: 2.13.1
   koa-bodyparser: 4.3.0
@@ -98,6 +100,44 @@ packages:
       form-data: 4.0.0
       query-string: 7.0.1
       xcase: 2.0.1
+    dev: false
+
+  /@hapi/address/4.1.0:
+    resolution: {integrity: sha1-1gxcDZMOd0Vv3N4lmOdzAuKVXh0=}
+    deprecated: Moved to 'npm install @sideway/address'
+    dependencies:
+      '@hapi/hoek': 9.2.0
+    dev: false
+
+  /@hapi/formula/2.0.0:
+    resolution: {integrity: sha1-7a3gYZ7VjI5PFk8jPNpwIR54cSg=}
+    deprecated: Moved to 'npm install @sideway/formula'
+    dev: false
+
+  /@hapi/hoek/9.2.0:
+    resolution: {integrity: sha1-85M6RONlhk9NrV25QVgQbVEegTE=}
+    dev: false
+
+  /@hapi/joi/17.1.1:
+    resolution: {integrity: sha1-nMjX4sIhPR5GcIxiYBhLRHxmE1A=}
+    deprecated: Switch to 'npm install joi'
+    dependencies:
+      '@hapi/address': 4.1.0
+      '@hapi/formula': 2.0.0
+      '@hapi/hoek': 9.2.0
+      '@hapi/pinpoint': 2.0.0
+      '@hapi/topo': 5.0.0
+    dev: false
+
+  /@hapi/pinpoint/2.0.0:
+    resolution: {integrity: sha1-gFtA1NvsBPwRanMIlJTgDwc96N8=}
+    deprecated: Moved to 'npm install @sideway/pinpoint'
+    dev: false
+
+  /@hapi/topo/5.0.0:
+    resolution: {integrity: sha1-wZr4V3+jk6BunHe2CZWvlZvnIec=}
+    dependencies:
+      '@hapi/hoek': 9.2.0
     dev: false
 
   /@koa/cors/3.1.0:

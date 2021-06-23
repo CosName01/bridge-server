@@ -1,4 +1,5 @@
 module.exports = paramSchema => {
+  // eslint-disable-next-line consistent-return
   return async function(ctx, next) {
     let { body } = ctx.request;
     try {
