@@ -4,8 +4,12 @@ const compose = require('koa-compose');
 const config = require('../config');
 const utils = require('./common/utils');
 const MD = require('./middlewares');
+const initMongoose = require('./db');
 
 const { host, port } = require('../config');
+
+// 连接数据库
+initMongoose();
 
 const app = new Koa();
 

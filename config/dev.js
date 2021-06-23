@@ -1,5 +1,7 @@
 const dev = {
-  url: 'mongodb://localhost:27017/',
-  dbName: 'bridge'
+  db: {
+    url: 'mongodb://localhost:27017/',
+    name: 'bridge'
+  }
 };
 module.exports = dev;
