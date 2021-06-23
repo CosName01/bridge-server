@@ -1,5 +1,5 @@
 const query_list = async ctx => {
-  ctx.body = 'user_list123';
+  ctx.body = 'user_list';
 };
 const register_user = async ctx => {
   ctx.body = {

@@ -53,7 +53,9 @@ module.exports = {
         'no-underscore-dangle': 0, // 允许命名中包含下划线
         'no-use-before-define': 0, // 定义前调用
         'no-useless-escape': 0, // 正则转义字符
-        'arrow-body-style': 0 // 箭头函数函数体不限制大括号
+        'arrow-body-style': 0, // 箭头函数函数体不限制大括号
+        "object-curly-newline": 0, // 花括号内换行符的一致性
+
     },
     overrides: [
     ]

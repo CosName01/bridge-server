@@ -1,6 +1,5 @@
 const error = () => {
   return async(ctx, next) => {
-    console.log(ctx);
     try {
       await next();
       if (ctx.status === 200) {
