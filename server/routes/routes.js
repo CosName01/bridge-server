@@ -13,6 +13,12 @@ const routes = [
     path: '/register_user',
     valid: scmUsers.register_user,
     controller: users.register_user
+  },
+  {
+    method: 'post',
+    path: '/update_user',
+    valid: scmUsers.update_user,
+    controller: users.update_user
   }
 ];
 
