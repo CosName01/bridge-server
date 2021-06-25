@@ -1,6 +1,6 @@
 const { UsersModel } = require('../models');
 
-const query_list = async ctx => {
+const query_user = async ctx => {
   let filter = {};
   const { id } = ctx.request.query;
   if (id) {
@@ -33,7 +33,6 @@ const update_user = async ctx => {
     phone
   };
   update = ctx.utils.removeEmpty(update);
-  console.log(update);
   try {
     await UsersModel.updateOne(where, update);
     ctx.body = '';
@@ -43,7 +42,7 @@ const update_user = async ctx => {
 };
 
 module.exports = {
-  query_list,
+  query_user,
   register_user,
   update_user
 };

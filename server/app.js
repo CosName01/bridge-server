@@ -29,10 +29,6 @@ app.on('error', (err, ctx) => {
   }
 });
 
-app.use(async ctx => {
-  ctx.body = 'hello world1';
-});
-
 app.listen(port, host, () => {
   console.log(`API server listening on http://${host}:${port}`);
 });

@@ -1,7 +1,9 @@
 const koaRouter = require('koa-router');
 
 // eslint-disable-next-line new-cap
-const router = new koaRouter();
+const router = new koaRouter({
+  prefix: '/api'
+});
 
 const routeList = require('./routes');
 const paramValidator = require('../middlewares/paramValidator');
