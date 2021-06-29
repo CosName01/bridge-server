@@ -1,7 +1,7 @@
 const { users } = require('../controllers');
 const { scmUsers } = require('../schema');
 
-const { register_user, query_user, update_user } = users;
+const { register_user, query_user, update_user, user_login } = users;
 const userRoutes = [
   {
     //  测试
@@ -20,6 +20,11 @@ const userRoutes = [
     path: '/update_user',
     valid: scmUsers.update_user,
     controller: update_user
+  },
+  {
+    method: 'post',
+    path: '/login',
+    controller: user_login
   }
 ];
 

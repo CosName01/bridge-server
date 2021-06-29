@@ -29,19 +29,19 @@ const envsSchema = new Schema({
   branchUser: {
     type: String,
     default(value, options) {
-      return '';
+      return 'unKnown';
     }
   },
   mobileBranchUser: {
     type: String,
     default(value, options) {
-      return '';
+      return 'unKnown';
     }
   },
   feBranchUser: {
     type: String,
     default(value, options) {
-      return '';
+      return 'unKnown';
     }
   },
   link: {

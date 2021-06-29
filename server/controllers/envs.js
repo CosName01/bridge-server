@@ -10,7 +10,7 @@ const query_env = async ctx => {
       _id: id
     };
   }
-  const list = await EnvsModel.find(filter, {});
+  const list = await EnvsModel.find(filter, {}).sort({ updateTime: -1 });
   // list.forEach(item => {
   //   item.createdTime = moment(item).utcOffset(8).format('YYYY-MM-DD HH:mm:ss');
   //   item.updatedTime = moment(item).utcOffset(8).format('YYYY-MM-DD HH:mm:ss');

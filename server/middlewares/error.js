@@ -7,6 +7,7 @@ const error = () => {
       }
     } catch (err) {
       if (err.code) {
+        console.log(err);
         // 自己主动抛出的错误
         ctx.res.fail({ code: err.code, msg: err.message });
       } else {
